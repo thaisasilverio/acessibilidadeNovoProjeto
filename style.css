@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eaeaea;
+    line-height: 1.5;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    padding: 20px;
+}
+
+fieldset {
+    margin-bottom: 15px;
+    padding: 15px;
+}
+
+legend {
+    padding: 0 10px;
+}
+
+.grupo, .grupoDois {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    padding: 10px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+   background: #cacaca;
+    font-size: 16px;
+    cursor: pointer;
+}
