@@ -5,40 +5,155 @@
 }
 
 body {
-    background-color: #eaeaea;
     line-height: 1.5;
+    background-color: rgb(228, 255, 254);
+    font-family: Arial, sans-serif;
+}
+
+main {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 20px;
 }
 
 h1 {
     text-align: center;
+    margin-bottom: 20px;
 }
 
+/* FORM */
 form {
     padding: 20px;
 }
 
+/* FIELDSET */
 fieldset {
-    margin-bottom: 15px;
-    padding: 15px;
+    background-color: #92daee;
+    border: 2px solid rgb(78, 165, 215);
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
 }
 
 legend {
+    font-size: 20px;
     padding: 0 10px;
+    font-weight: bold;
 }
 
-.grupo, .grupoDois {
+/* GRUPOS */
+.grupo,
+.grupoDois {
     display: flex;
     flex-direction: column;
+    margin-bottom: 15px;
 }
 
-input {
+/* DUAS COLUNAS NO ENDEREÇO */
+.grupoDois {
+    width: 48%;
+}
+
+fieldset:nth-of-type(2) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* INPUTS */
+input, textarea {
     padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+
+/* BOTÕES */
+.botao {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
 }
 
 button {
-    width: 100%;
+    width: 48%;
     padding: 12px;
-   background: #cacaca;
+    background: #4ba9c5;
     font-size: 16px;
     cursor: pointer;
+    border: none;
+    border-radius: 6px;
+}
+
+button:hover {
+    background: #379bb5;
+}
+
+/* ERROS */
+.erro {
+    color: red;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+.input-erro {
+    border: 2px solid red;
+}
+
+/* TABELA */
+table {
+    margin-top: 30px;
+    background-color: white;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+caption {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+th, td {
+    border: 1px solid #333;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #75cfdf;
+}
+
+tr:nth-child(even) {
+    background-color: #73d1da;
+}
+
+tr:hover {
+    background-color: #e6f2ff;
+}
+
+.sexo {
+    background-color: #fff; /* fundo branco */
+    border-radius: 8px;
+    display: flex;
+    gap: 10px;
+}
+
+/* linha dos radios */
+.sexo-opcoes {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* alinhamento do texto */
+.sexo p {
+    font-weight: bold;
+}
+
+/* erro */
+#erro-sexo {
+    color: red;
+    font-size: 13px;
 }
