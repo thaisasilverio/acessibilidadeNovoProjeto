@@ -21,12 +21,12 @@ h1 {
     margin-bottom: 20px;
 }
 
-/* FORM */
+
 form {
     padding: 20px;
 }
 
-/* FIELDSET */
+
 fieldset {
     background-color: #92daee;
     border: 2px solid rgb(78, 165, 215);
@@ -49,7 +49,6 @@ legend {
     margin-bottom: 15px;
 }
 
-/* DUAS COLUNAS NO ENDEREÇO */
 .grupoDois {
     width: 48%;
 }
@@ -156,4 +155,38 @@ tr:hover {
 #erro-sexo {
     color: red;
     font-size: 13px;
+}
+
+/* Menu */
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    background-color: #0a3d62;
+    padding: 10px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/* Skip link (acessibilidade) */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #000;
+    color: #fff;
+    padding: 8px;
+    z-index: 100;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+section:focus {
+    outline: 3px solid #f39c12;
 }
